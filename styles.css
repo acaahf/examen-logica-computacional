@@ -1,0 +1,122 @@
+/* styles.css - diseño más profesional */
+
+:root {
+  --color-principal: #2c3e50;
+  --color-secundario: #ecf0f1;
+  --color-acento: #3498db;
+  --color-texto: #2d3436;
+  --fuente-principal: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  margin: 0;
+  background-color: #f9fbfc;
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-principal);
+  padding: 20px 0;
+  font-size: 2rem;
+  background-color: white;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+button {
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a242f;
+}
+
+section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: var(--color-principal);
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form button {
+  width: 100%;
+  font-weight: 600;
+  background-color: var(--color-acento);
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid #ecf0f1;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f2f6;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
